@@ -84,7 +84,7 @@
                 </li>
             </ul>
             <button
-                class="md:w-56 md:h-auto md:p-3 bg-white text-black rounded-2xl md:text-[17px] font-medium md:mx-6 w-7 h-7 ml-2.5 text-[5px] hidden md:block">Post</button>
+                class="md:w-56 md:h-auto md:p-3 bg-white text-black rounded-2xl md:text-[17px] font-medium md:mx-6 w-7 h-7 ml-2.5 text-[5px] hidden md:block cursor-pointer hover:bg-gray-300">Post</button>
             <button class=" bg-blue-400 w-7 h-7 rounded-2xl ml-2.5 block p-1 md:hidden">
                 <span class="text-white text-[20px] material-symbols-outlined">
                     edit
@@ -106,7 +106,7 @@
                 </span>
             </div>
         </div>
-        <div class="second w-full md:w-1/3 h-max border-x-[1px] border-gray-600 space-y-3 ml-11 md:m-auto">
+        <div class="second w-full md:w-1/3 h-max border-x-[1px] border-gray-600 space-y-3 ml-11 md:ml-auto">
             <div class="switch w-full h-2.5 p-2 text-white flex">
                 <span class="w-1/2 text-center">For You</span>
                 <span class="w-1/2 text-center">Following</span>
@@ -327,7 +327,7 @@
             </div>
 
         </div>
-        <div class="third w-1/3 px-6 space-y-3.5 fixed right-0 hidden md:block">
+        <div class="third w-1/3 px-6 space-y-3.5 hidden md:block">
             <div class="serachbox mt-3 w-3/4 p-2 rounded-4xl border-2 border-gray-600 flex gap-2 items-center ">
                 <span class="material-symbols-outlined text-gray-500">
                     search
@@ -343,7 +343,7 @@
                 <button class=" bg-[rgb(29,155,240)] p-2 w-1/3 rounded-4xl ">Subscribe</button>
             </div>
             <div
-                class=" w-3/4 h-3/5 p-2 border-2 rounded-2xl border-gray-600 text-white font-bold text-[15px] flex flex-col gap-y-3.5">
+                class=" w-3/4 h-auto p-2 border-2 rounded-2xl border-gray-600 text-white font-bold text-[15px] flex flex-col gap-y-3.5">
                 <h2 class="text-[20px]">
                     What’s happening</h2>
                 <div class="news text-[13px] text-gray-300 font-extralight h-auto w-auto flex justify-between">
@@ -388,11 +388,12 @@
                         more_horiz
                     </span>
                 </div>
+                <p class="text-blue-500 p-1 hover:underline cursor-pointer ">Show more</p>
             </div>
-            <div class="who sticky top-[50vh] m-3 bg-[#16181c] w-[73%] py-5 rounded-xl space-y-1">
-                <h1 class="text-xl text-white font-bold font-bold px-3">Who To Follow</h1>
+            <div class="who sticky top-0 bg-[#16181c] w-[75%] py-3 rounded-xl space-y-1">
+                <h1 class="text-xl text-white font-bold px-3">Who To Follow</h1>
 
-                <div class="item p-3 w-[90%] items-center gap-2 flex justify-between hover:bg-gray-800 cursor-pointer">
+                <div class="item p-3 w-full items-center gap-2 flex justify-between hover:bg-gray-800 cursor-pointer">
                     <div class="flex gap-3">
 
                         <div class="p1"><img class="w-12 h-12"
@@ -405,14 +406,10 @@
                     </div>
 
                     <div class="p3">
-                        <button class="bg-white text-black px-5 py-2 rounded-full font-bold">Follow</button>
+                        <button class="bg-white text-black px-5 py-2 rounded-full font-bold cursor-pointer hover:bg-gray-300">Follow</button>
                     </div>
                 </div>
-            </div>
-            <div class="who sticky top-[50vh] m-3 bg-[#16181c] w-[73%] py-5 rounded-xl space-y-1">
-                <h1 class="text-xl text-white font-bold font-bold px-3">Who To Follow</h1>
-
-                <div class="item p-3 w-[90%] items-center gap-2 flex justify-between hover:bg-gray-800 cursor-pointer">
+                <div class="item p-3 w-full items-center gap-2 flex justify-between hover:bg-gray-800 cursor-pointer">
                     <div class="flex gap-3">
 
                         <div class="p1"><img class="w-12 h-12"
@@ -425,10 +422,36 @@
                     </div>
 
                     <div class="p3">
-                        <button class="bg-white text-black px-5 py-2 rounded-full font-bold">Follow</button>
+                        <button class="bg-white text-black px-5 py-2 rounded-full font-bold cursor-pointer hover:bg-gray-300">Follow</button>
                     </div>
                 </div>
+                <div class="item p-3 w-full items-center gap-2 flex justify-between hover:bg-gray-800 cursor-pointer">
+                    <div class="flex gap-3">
+
+                        <div class="p1"><img class="w-12 h-12"
+                                src="https://pbs.twimg.com/profile_images/1900242085678112768/PsrVfgsD_bigger.jpg"
+                                alt="Yt India"></div>
+                        <div class="p2 ">
+                            <div class="text-white font-bold">Vercel</div>
+                            <div class="text-gray-500">@vercel</div>
+                        </div>
+                    </div>
+
+                    <div class="p3">
+                        <button class="bg-white text-black px-5 py-2 rounded-full font-bold cursor-pointer hover:bg-gray-300">Follow</button>
+                    </div>
+                </div>
+                <p class="text-blue-500 p-1 hover:underline cursor-pointer ">Show more</p>
             </div>
+            <div class="text-gray-500 sticky top-[47vh] text-sm w-[74%] h-auto ml-1.5 px-3 space-x-1">
+                <span>Terms of service |</span>
+                <span>Privacy Policy |</span>
+                <span>Cookie Policy |</span>
+                <span>Accessibility |</span>
+                <span>Ads Info |</span>
+                <span>More |</span>
+            </div>
+           
         </div>
     </div>
 
